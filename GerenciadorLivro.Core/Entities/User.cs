@@ -4,7 +4,7 @@ namespace GerenciadorLivro.Core.Entities;
 
 public class User : BaseEntity
 {
-    public Book(string name, string email) : base()
+    public User(string name, string email) : base()
     {
         Name = name;
         Email = email;
