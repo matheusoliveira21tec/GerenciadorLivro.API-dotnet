@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GerenciadorLivro.Core\GerenciadorLivro.Core.csproj" />
+    <ProjectReference Include="..\GerenciadorLivro.Infrastructure\GerenciadorLivro.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
