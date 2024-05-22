@@ -1,5 +1,6 @@
-﻿using DevFreela.Core.Repositories;
-using GerenciadorLivro.Core.Entities;
+﻿using GerenciadorLivro.Core.Entities;
+using GerenciadorLivro.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace GerenciadorLivro.Infrastructure.Persistence.Repositories
 {
@@ -14,6 +15,13 @@ namespace GerenciadorLivro.Infrastructure.Persistence.Repositories
         {
             await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync();
+        }
+        public async Task<User> GetByIdAsync(int id)
+        {
+            return await _dbContext
+                .Users
+                .AsNoTracking()
+                .SingleOrDefaultAsync(u => u.Id == id);
         }
     }
 }

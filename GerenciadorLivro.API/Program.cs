@@ -1,4 +1,12 @@
+using GerenciadorLivro.Application;
+using GerenciadorLivro.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
+// Add services to the container.
+builder.Services
+    .AddInfrastructure(configuration)
+    .AddApplication();
 
 // Add services to the container.
 
