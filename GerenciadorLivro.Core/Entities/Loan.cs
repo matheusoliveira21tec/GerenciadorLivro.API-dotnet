@@ -15,8 +15,8 @@ public class Loan : BaseEntity
     public User User { get; private set; }
     public DateTime ReturnDate { get; private set; }
 
-    public void ReturnBook(DateTime returnDate)
+    public void ReturnBook()
     {
-        ReturnDate = returnDate;
+        ReturnDate = DateTime.Now;
     }
 }
