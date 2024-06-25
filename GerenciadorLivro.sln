@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorLivro.API", "GerenciadorLivro.API\GerenciadorLivro.API.csproj", "{2CFD4559-74BA-4475-BB1C-430ABE6CD4FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorLivro.API", "GerenciadorLivro.API\GerenciadorLivro.API.csproj", "{2CFD4559-74BA-4475-BB1C-430ABE6CD4FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorLivro.Core", "GerenciadorLivro.Core\GerenciadorLivro.Core.csproj", "{11C52BE0-B35C-4D7C-AD1E-81099EF48832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorLivro.Core", "GerenciadorLivro.Core\GerenciadorLivro.Core.csproj", "{11C52BE0-B35C-4D7C-AD1E-81099EF48832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorLivro.Application", "GerenciadorLivro.Application\GerenciadorLivro.Application.csproj", "{F658285C-D816-41F1-94C4-CD637B2BA1B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorLivro.Application", "GerenciadorLivro.Application\GerenciadorLivro.Application.csproj", "{F658285C-D816-41F1-94C4-CD637B2BA1B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorLivro.Infrastructure", "GerenciadorLivro.Infrastructure\GerenciadorLivro.Infrastructure.csproj", "{258D3023-D94C-46AE-AF85-CB300E17A9BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorLivro.Infrastructure", "GerenciadorLivro.Infrastructure\GerenciadorLivro.Infrastructure.csproj", "{258D3023-D94C-46AE-AF85-CB300E17A9BD}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{CEE7C393-830C-4197-B9C6-57CAD292E6A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{258D3023-D94C-46AE-AF85-CB300E17A9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{258D3023-D94C-46AE-AF85-CB300E17A9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{258D3023-D94C-46AE-AF85-CB300E17A9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE7C393-830C-4197-B9C6-57CAD292E6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE7C393-830C-4197-B9C6-57CAD292E6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE7C393-830C-4197-B9C6-57CAD292E6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE7C393-830C-4197-B9C6-57CAD292E6A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
