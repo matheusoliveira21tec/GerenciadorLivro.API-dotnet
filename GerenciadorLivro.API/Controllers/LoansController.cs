@@ -42,9 +42,9 @@ public class LoansController : ControllerBase
 
     // api/loans/1/returnBokk
     [HttpPut("{id}/returnBook")]
-    public async Task<IActionResult> ReturnBook(int id, [FromBody] ReturnBookCommand command)
+    public async Task<IActionResult> ReturnBook(int id)
     {
-        command.Id = id;
+        var command = new ReturnBookCommand(id);
 
         var result = await _mediator.Send(command);
 

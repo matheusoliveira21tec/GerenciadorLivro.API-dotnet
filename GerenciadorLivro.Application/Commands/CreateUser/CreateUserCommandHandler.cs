@@ -4,10 +4,10 @@ using MediatR;
 
 namespace GerenciadorLivro.Application.Commands.CreateUser;
 
-public class CreateLoanCommandHandler : IRequestHandler<CreateUserCommand, int>
+public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
 {
     private readonly IUserRepository _userRepository;
-    public CreateLoanCommandHandler(IUserRepository userRepository)
+    public CreateUserCommandHandler(IUserRepository userRepository)
     {
         _userRepository = userRepository;
     }

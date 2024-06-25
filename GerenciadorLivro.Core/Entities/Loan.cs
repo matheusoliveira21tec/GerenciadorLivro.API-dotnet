@@ -13,7 +13,7 @@ public class Loan : BaseEntity
     public Book Book { get; private set; }
     public int IdUser {  get; private set; }
     public User User { get; private set; }
-    public DateTime ReturnDate { get; private set; }
+    public DateTime? ReturnDate { get; private set; }
 
     public void ReturnBook()
     {

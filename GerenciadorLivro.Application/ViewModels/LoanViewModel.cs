@@ -2,9 +2,9 @@
 
 public class LoanViewModel
 {
-    public LoanViewModel(int id, DateTime returnDate)
+    public LoanViewModel(int id, DateTime? returnDate)
     {
-        id = id;
+        Id = id;
         ReturnDate = returnDate;
     }
 

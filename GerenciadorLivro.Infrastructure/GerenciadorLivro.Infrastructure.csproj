@@ -19,4 +19,8 @@
     <ProjectReference Include="..\GerenciadorLivro.Core\GerenciadorLivro.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+  </ItemGroup>
+
 </Project>

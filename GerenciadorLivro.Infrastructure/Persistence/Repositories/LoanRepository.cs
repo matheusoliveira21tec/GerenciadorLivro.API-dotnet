@@ -21,7 +21,6 @@ namespace GerenciadorLivro.Infrastructure.Persistence.Repositories
         {
             return await _dbContext
                 .Loans
-                .AsNoTracking()
                 .SingleOrDefaultAsync(u => u.Id == id);
         }
         public async Task SaveChangesAsync()
